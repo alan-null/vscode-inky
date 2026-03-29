@@ -2,6 +2,8 @@
 
 Per-workspace color themes stored outside your repo or user profile, synced across devices using [**Settings Sync**](https://code.visualstudio.com/docs/configure/settings-sync) and [`globalState`](https://code.visualstudio.com/docs/configure/settings-sync#_sync-user-global-state-between-machines).
 
+![demo](https://raw.githubusercontent.com/git-hosted/cdn/refs/heads/master/inky/demo.gif)
+
 ## Why
 
 Because `.vscode/settings.json` gets committed and shared with everyone else working in the repo.
@@ -37,7 +39,7 @@ Configure under **Settings → Inky**:
 
 ### Built-in themes
 <!-- VSC Marketplace -->
-<!-- <img src="https://raw.githubusercontent.com/alan-null/vscode-inky/refs/heads/master/assets/themes-preview.png" alt="theme preview" style="width:100%;height:auto;display:block" /> -->
+<!-- ![theme preview](https://raw.githubusercontent.com/alan-null/vscode-inky/refs/heads/master/assets/themes-preview.png) -->
 <img src="assets/themes-preview.svg" alt="themes preview" style="width:100%;height:auto;display:block" />
 
 ### Custom themes
@@ -55,10 +57,9 @@ Custom themes live in a JSON file at `globalStorageUri/themes.json` — profile-
 - Applying a theme **merges** its colors into `workbench.colorCustomizations` via `ConfigurationTarget.Global` — other color customizations you have set are preserved.
 - Clearing a theme removes only the keys Inky wrote, leaving any other customizations intact.
 
-
 ## Architecture
 <!-- VSC Marketplace -->
-<!-- <br/><img src="https://raw.githubusercontent.com/alan-null/vscode-inky/refs/heads/master/assets/diagram.png" alt="diagram" style="width:100%;height:auto;display:block" /><br/> -->
+<!-- ![diagram](https://raw.githubusercontent.com/alan-null/vscode-inky/refs/heads/master/assets/diagram.png) -->
 <img src="assets/diagram.svg" alt="diagram" style="width:100%;height:auto;display:block" />
 
 Both **workspace→theme** mappings and custom theme definitions are stored in `globalState` and registered with `setKeysForSync`, so Settings Sync carries them to all your machines automatically.

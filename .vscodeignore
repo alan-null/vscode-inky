@@ -12,3 +12,4 @@ node_modules/
 **/*.psd
 **/*.drawio.bkp
 **/*.drawio
+**/*.svg
