@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="928" height="472" viewBox="0 0 928 472">
+
+  <g transform="translate(16,16)">
+    <rect width="208" height="92" rx="8" fill="#2e080c" stroke="#00000010" />
+    <!-- title bar -->
+    <rect x="0" y="0" width="208" height="16" rx="8" fill="#2e080c" opacity="0.95" />
+    <text x="9" y="11" font-size="10" fill="#f5e8ea" opacity="0.8">&#x25CF; &#x25CF; &#x25CF;</text>
+    <!-- activity bar -->
+    <rect x="0" y="16" width="32" height="56" fill="#5c0f18" opacity="0.95" />
+    <!-- editor area -->
+    <rect x="32" y="16" width="176" height="56" fill="#11111122" />
+    <!-- activity dots -->
+    <rect x="12" y="32" width="8" height="8" rx="2" fill="#f5e8ea" />
+    <rect x="12" y="52" width="8" height="8" rx="2" fill="#f5e8ea" opacity="0.4" />
+    <rect x="12" y="72" width="8" height="8" rx="2" fill="#f5e8ea" opacity="0.4" />
+    <!-- badge -->
+    <circle cx="22" cy="54" r="3" fill="#22d3ee" />
+    <!-- status bar -->
+    <rect x="0" y="68" width="208" height="24" fill="#2e080c" opacity="0.95" />
+    <text x="12" y="86" font-family="system-ui,Segoe UI,Roboto,Arial" font-weight="600" font-size="16" fill="#f5e8ea">Scarlet</text>
+    <!-- subtle overlay -->
+    <rect width="208" height="92" rx="8" fill="#000" opacity="0.12" />
+  </g>
+
+  <g transform="translate(240,16)">
+    <rect width="208" height="92" rx="8" fill="#2e1005" stroke="#00000010" />
+    <!-- title bar -->
+    <rect x="0" y="0" width="208" height="16" rx="8" fill="#2e1005" opacity="0.95" />
+    <text x="9" y="11" font-size="10" fill="#f5ebe8" opacity="0.8">&#x25CF; &#x25CF; &#x25CF;</text>
+    <!-- activity bar -->
+    <rect x="0" y="16" width="32" height="56" fill="#5c200a" opacity="0.95" />
+    <!-- editor area -->
+    <rect x="32" y="16" width="176" height="56" fill="#11111122" />
+    <!-- activity dots -->
+    <rect x="12" y="32" width="8" height="8" rx="2" fill="#f5ebe8" />
+    <rect x="12" y="52" width="8" height="8" rx="2" fill="#f5ebe8" opacity="0.4" />
+    <rect x="12" y="72" width="8" height="8" rx="2" fill="#f5ebe8" opacity="0.4" />
+    <!-- badge -->
+    <circle cx="22" cy="54" r="3" fill="#4ade80" />
+    <!-- status bar -->
+    <rect x="0" y="68" width="208" height="24" fill="#2e1005" opacity="0.95" />
+    <text x="12" y="86" font-family="system-ui,Segoe UI,Roboto,Arial" font-weight="600" font-size="16" fill="#f5ebe8">Rust</text>
+    <!-- subtle overlay -->
+    <rect width="208" height="92" rx="8" fill="#000" opacity="0.12" />
+  </g>
+
+  <g transform="translate(464,16)">
+    <rect width="208" height="92" rx="8" fill="#2e1f04" stroke="#00000010" />
+    <!-- title bar -->
+    <rect x="0" y="0" width="208" height="16" rx="8" fill="#2e1f04" opacity="0.95" />
+    <text x="9" y="11" font-size="10" fill="#f5edd8" opacity="0.8">&#x25CF; &#x25CF; &#x25CF;</text>
+    <!-- activity bar -->
+    <rect x="0" y="16" width="32" height="56" fill="#5c3d08" opacity="0.95" />
+    <!-- editor area -->
+    <rect x="32" y="16" width="176" height="56" fill="#11111122" />
+    <!-- activity dots -->
+    <rect x="12" y="32" width="8" height="8" rx="2" fill="#f5edd8" />
+    <rect x="12" y="52" width="8" height="8" rx="2" fill="#f5edd8" opacity="0.4" />
+    <rect x="12" y="72" width="8" height="8" rx="2" fill="#f5edd8" opacity="0.4" />
+    <!-- badge -->
+    <circle cx="22" cy="54" r="3" fill="#818cf8" />
+    <!-- status bar -->
+    <rect x="0" y="68" width="208" height="24" fill="#2e1f04" opacity="0.95" />
+    <text x="12" y="86" font-family="system-ui,Segoe UI,Roboto,Arial" font-weight="600" font-size="16" fill="#f5edd8">Amber</text>
+    <!-- subtle overlay -->
+    <rect width="208" height="92" rx="8" fill="#000" opacity="0.12" />
+  </g>
+
+  <g transform="translate(688,16)">
+    <rect width="208" height="92" rx="8" fill="#1d2204" stroke="#00000010" />
+    <!-- title bar -->
+    <rect x="0" y="0" width="208" height="16" rx="8" fill="#1d2204" opacity="0.95" />
+    <text x="9" y="11" font-size="10" fill="#eef0e7" opacity="0.8">&#x25CF; &#x25CF; &#x25CF;</text>
+    <!-- activity bar -->
+    <rect x="0" y="16" width="32" height="56" fill="#3a4508" opacity="0.95" />
+    <!-- editor area -->
+    <rect x="32" y="16" width="176" height="56" fill="#11111122" />
+    <!-- activity dots -->
+    <rect x="12" y="32" width="8" height="8" rx="2" fill="#eef0e7" />
+    <rect x="12" y="52" width="8" height="8" rx="2" fill="#eef0e7" opacity="0.4" />
+    <rect x="12" y="72" width="8" height="8" rx="2" fill="#eef0e7" opacity="0.4" />
+    <!-- badge -->
+    <circle cx="22" cy="54" r="3" fill="#f43f5e" />
+    <!-- status bar -->
+    <rect x="0" y="68" width="208" height="24" fill="#1d2204" opacity="0.95" />
+    <text x="12" y="86" font-family="system-ui,Segoe UI,Roboto,Arial" font-weight="600" font-size="16" fill="#eef0e7">Moss</text>
+    <!-- subtle overlay -->
+    <rect width="208" height="92" rx="8" fill="#000" opacity="0.12" />
+  </g>
+
+  <g transform="translate(16,126)">
+    <rect width="208" height="92" rx="8" fill="#08231a" stroke="#00000010" />
+    <!-- title bar -->
+    <rect x="0" y="0" width="208" height="16" rx="8" fill="#08231a" opacity="0.95" />
+    <text x="9" y="11" font-size="10" fill="#e8f2ec" opacity="0.8">&#x25CF; &#x25CF; &#x25CF;</text>
+    <!-- activity bar -->
+    <rect x="0" y="16" width="32" height="56" fill="#0f4524" opacity="0.95" />
+    <!-- editor area -->
+    <rect x="32" y="16" width="176" height="56" fill="#11111122" />
+    <!-- activity dots -->
+    <rect x="12" y="32" width="8" height="8" rx="2" fill="#e8f2ec" />
+    <rect x="12" y="52" width="8" height="8" rx="2" fill="#e8f2ec" opacity="0.4" />
+    <rect x="12" y="72" width="8" height="8" rx="2" fill="#e8f2ec" opacity="0.4" />
+    <!-- badge -->
+    <circle cx="22" cy="54" r="3" fill="#f59e0b" />
+    <!-- status bar -->
+    <rect x="0" y="68" width="208" height="24" fill="#08231a" opacity="0.95" />
+    <text x="12" y="86" font-family="system-ui,Segoe UI,Roboto,Arial" font-weight="600" font-size="16" fill="#e8f2ec">Forest</text>
+    <!-- subtle overlay -->
+    <rect width="208" height="92" rx="8" fill="#000" opacity="0.12" />
+  </g>
+
+  <g transform="translate(240,126)">
+    <rect width="208" height="92" rx="8" fill="#071f24" stroke="#00000010" />
+    <!-- title bar -->
+    <rect x="0" y="0" width="208" height="16" rx="8" fill="#071f24" opacity="0.95" />
+    <text x="9" y="11" font-size="10" fill="#e7f4f6" opacity="0.8">&#x25CF; &#x25CF; &#x25CF;</text>
+    <!-- activity bar -->
+    <rect x="0" y="16" width="32" height="56" fill="#0d3d48" opacity="0.95" />
+    <!-- editor area -->
+    <rect x="32" y="16" width="176" height="56" fill="#11111122" />
+    <!-- activity dots -->
+    <rect x="12" y="32" width="8" height="8" rx="2" fill="#e7f4f6" />
+    <rect x="12" y="52" width="8" height="8" rx="2" fill="#e7f4f6" opacity="0.4" />
+    <rect x="12" y="72" width="8" height="8" rx="2" fill="#e7f4f6" opacity="0.4" />
+    <!-- badge -->
+    <circle cx="22" cy="54" r="3" fill="#f97316" />
+    <!-- status bar -->
+    <rect x="0" y="68" width="208" height="24" fill="#071f24" opacity="0.95" />
+    <text x="12" y="86" font-family="system-ui,Segoe UI,Roboto,Arial" font-weight="600" font-size="16" fill="#e7f4f6">Teal</text>
+    <!-- subtle overlay -->
+    <rect width="208" height="92" rx="8" fill="#000" opacity="0.12" />
+  </g>
+
+  <g transform="translate(464,126)">
+    <rect width="208" height="92" rx="8" fill="#0d1f40" stroke="#00000010" />
+    <!-- title bar -->
+    <rect x="0" y="0" width="208" height="16" rx="8" fill="#0d1f40" opacity="0.95" />
+    <text x="9" y="11" font-size="10" fill="#e7eef8" opacity="0.8">&#x25CF; &#x25CF; &#x25CF;</text>
+    <!-- activity bar -->
+    <rect x="0" y="16" width="32" height="56" fill="#1a3d80" opacity="0.95" />
+    <!-- editor area -->
+    <rect x="32" y="16" width="176" height="56" fill="#11111122" />
+    <!-- activity dots -->
+    <rect x="12" y="32" width="8" height="8" rx="2" fill="#e7eef8" />
+    <rect x="12" y="52" width="8" height="8" rx="2" fill="#e7eef8" opacity="0.4" />
+    <rect x="12" y="72" width="8" height="8" rx="2" fill="#e7eef8" opacity="0.4" />
+    <!-- badge -->
+    <circle cx="22" cy="54" r="3" fill="#fb923c" />
+    <!-- status bar -->
+    <rect x="0" y="68" width="208" height="24" fill="#0d1f40" opacity="0.95" />
+    <text x="12" y="86" font-family="system-ui,Segoe UI,Roboto,Arial" font-weight="600" font-size="16" fill="#e7eef8">Cobalt</text>
+    <!-- subtle overlay -->
+    <rect width="208" height="92" rx="8" fill="#000" opacity="0.12" />
+  </g>
+
+  <g transform="translate(688,126)">
+    <rect width="208" height="92" rx="8" fill="#040f33" stroke="#00000010" />
+    <!-- title bar -->
+    <rect x="0" y="0" width="208" height="16" rx="8" fill="#040f33" opacity="0.95" />
+    <text x="9" y="11" font-size="10" fill="#e7e8f5" opacity="0.8">&#x25CF; &#x25CF; &#x25CF;</text>
+    <!-- activity bar -->
+    <rect x="0" y="16" width="32" height="56" fill="#081f66" opacity="0.95" />
+    <!-- editor area -->
+    <rect x="32" y="16" width="176" height="56" fill="#11111122" />
+    <!-- activity dots -->
+    <rect x="12" y="32" width="8" height="8" rx="2" fill="#e7e8f5" />
+    <rect x="12" y="52" width="8" height="8" rx="2" fill="#e7e8f5" opacity="0.4" />
+    <rect x="12" y="72" width="8" height="8" rx="2" fill="#e7e8f5" opacity="0.4" />
+    <!-- badge -->
+    <circle cx="22" cy="54" r="3" fill="#f43f5e" />
+    <!-- status bar -->
+    <rect x="0" y="68" width="208" height="24" fill="#040f33" opacity="0.95" />
+    <text x="12" y="86" font-family="system-ui,Segoe UI,Roboto,Arial" font-weight="600" font-size="16" fill="#e7e8f5">Navy</text>
+    <!-- subtle overlay -->
+    <rect width="208" height="92" rx="8" fill="#000" opacity="0.12" />
+  </g>
+
+  <g transform="translate(16,236)">
+    <rect width="208" height="92" rx="8" fill="#0d082f" stroke="#00000010" />
+    <!-- title bar -->
+    <rect x="0" y="0" width="208" height="16" rx="8" fill="#0d082f" opacity="0.95" />
+    <text x="9" y="11" font-size="10" fill="#ece8f8" opacity="0.8">&#x25CF; &#x25CF; &#x25CF;</text>
+    <!-- activity bar -->
+    <rect x="0" y="16" width="32" height="56" fill="#1a0f5e" opacity="0.95" />
+    <!-- editor area -->
+    <rect x="32" y="16" width="176" height="56" fill="#11111122" />
+    <!-- activity dots -->
+    <rect x="12" y="32" width="8" height="8" rx="2" fill="#ece8f8" />
+    <rect x="12" y="52" width="8" height="8" rx="2" fill="#ece8f8" opacity="0.4" />
+    <rect x="12" y="72" width="8" height="8" rx="2" fill="#ece8f8" opacity="0.4" />
+    <!-- badge -->
+    <circle cx="22" cy="54" r="3" fill="#f59e0b" />
+    <!-- status bar -->
+    <rect x="0" y="68" width="208" height="24" fill="#0d082f" opacity="0.95" />
+    <text x="12" y="86" font-family="system-ui,Segoe UI,Roboto,Arial" font-weight="600" font-size="16" fill="#ece8f8">Indigo</text>
+    <!-- subtle overlay -->
+    <rect width="208" height="92" rx="8" fill="#000" opacity="0.12" />
+  </g>
+
+  <g transform="translate(240,236)">
+    <rect width="208" height="92" rx="8" fill="#170828" stroke="#00000010" />
+    <!-- title bar -->
+    <rect x="0" y="0" width="208" height="16" rx="8" fill="#170828" opacity="0.95" />
+    <text x="9" y="11" font-size="10" fill="#f0e8f8" opacity="0.8">&#x25CF; &#x25CF; &#x25CF;</text>
+    <!-- activity bar -->
+    <rect x="0" y="16" width="32" height="56" fill="#2e0f50" opacity="0.95" />
+    <!-- editor area -->
+    <rect x="32" y="16" width="176" height="56" fill="#11111122" />
+    <!-- activity dots -->
+    <rect x="12" y="32" width="8" height="8" rx="2" fill="#f0e8f8" />
+    <rect x="12" y="52" width="8" height="8" rx="2" fill="#f0e8f8" opacity="0.4" />
+    <rect x="12" y="72" width="8" height="8" rx="2" fill="#f0e8f8" opacity="0.4" />
+    <!-- badge -->
+    <circle cx="22" cy="54" r="3" fill="#4ade80" />
+    <!-- status bar -->
+    <rect x="0" y="68" width="208" height="24" fill="#170828" opacity="0.95" />
+    <text x="12" y="86" font-family="system-ui,Segoe UI,Roboto,Arial" font-weight="600" font-size="16" fill="#f0e8f8">Violet</text>
+    <!-- subtle overlay -->
+    <rect width="208" height="92" rx="8" fill="#000" opacity="0.12" />
+  </g>
+
+  <g transform="translate(464,236)">
+    <rect width="208" height="92" rx="8" fill="#250722" stroke="#00000010" />
+    <!-- title bar -->
+    <rect x="0" y="0" width="208" height="16" rx="8" fill="#250722" opacity="0.95" />
+    <text x="9" y="11" font-size="10" fill="#f5e8f4" opacity="0.8">&#x25CF; &#x25CF; &#x25CF;</text>
+    <!-- activity bar -->
+    <rect x="0" y="16" width="32" height="56" fill="#4a0d44" opacity="0.95" />
+    <!-- editor area -->
+    <rect x="32" y="16" width="176" height="56" fill="#11111122" />
+    <!-- activity dots -->
+    <rect x="12" y="32" width="8" height="8" rx="2" fill="#f5e8f4" />
+    <rect x="12" y="52" width="8" height="8" rx="2" fill="#f5e8f4" opacity="0.4" />
+    <rect x="12" y="72" width="8" height="8" rx="2" fill="#f5e8f4" opacity="0.4" />
+    <!-- badge -->
+    <circle cx="22" cy="54" r="3" fill="#22d3ee" />
+    <!-- status bar -->
+    <rect x="0" y="68" width="208" height="24" fill="#250722" opacity="0.95" />
+    <text x="12" y="86" font-family="system-ui,Segoe UI,Roboto,Arial" font-weight="600" font-size="16" fill="#f5e8f4">Fuchsia</text>
+    <!-- subtle overlay -->
+    <rect width="208" height="92" rx="8" fill="#000" opacity="0.12" />
+  </g>
+
+  <g transform="translate(688,236)">
+    <rect width="208" height="92" rx="8" fill="#250715" stroke="#00000010" />
+    <!-- title bar -->
+    <rect x="0" y="0" width="208" height="16" rx="8" fill="#250715" opacity="0.95" />
+    <text x="9" y="11" font-size="10" fill="#f5e8ee" opacity="0.8">&#x25CF; &#x25CF; &#x25CF;</text>
+    <!-- activity bar -->
+    <rect x="0" y="16" width="32" height="56" fill="#4a0f2a" opacity="0.95" />
+    <!-- editor area -->
+    <rect x="32" y="16" width="176" height="56" fill="#11111122" />
+    <!-- activity dots -->
+    <rect x="12" y="32" width="8" height="8" rx="2" fill="#f5e8ee" />
+    <rect x="12" y="52" width="8" height="8" rx="2" fill="#f5e8ee" opacity="0.4" />
+    <rect x="12" y="72" width="8" height="8" rx="2" fill="#f5e8ee" opacity="0.4" />
+    <!-- badge -->
+    <circle cx="22" cy="54" r="3" fill="#4ade80" />
+    <!-- status bar -->
+    <rect x="0" y="68" width="208" height="24" fill="#250715" opacity="0.95" />
+    <text x="12" y="86" font-family="system-ui,Segoe UI,Roboto,Arial" font-weight="600" font-size="16" fill="#f5e8ee">Rose</text>
+    <!-- subtle overlay -->
+    <rect width="208" height="92" rx="8" fill="#000" opacity="0.12" />
+  </g>
+
+  <g transform="translate(16,346)">
+    <rect width="208" height="92" rx="8" fill="#0d0d1a" stroke="#00000010" />
+    <!-- title bar -->
+    <rect x="0" y="0" width="208" height="16" rx="8" fill="#0d0d1a" opacity="0.95" />
+    <text x="9" y="11" font-size="10" fill="#e7e7f5" opacity="0.8">&#x25CF; &#x25CF; &#x25CF;</text>
+    <!-- activity bar -->
+    <rect x="0" y="16" width="32" height="56" fill="#1a1a2e" opacity="0.95" />
+    <!-- editor area -->
+    <rect x="32" y="16" width="176" height="56" fill="#11111122" />
+    <!-- activity dots -->
+    <rect x="12" y="32" width="8" height="8" rx="2" fill="#e7e7f5" />
+    <rect x="12" y="52" width="8" height="8" rx="2" fill="#e7e7f5" opacity="0.4" />
+    <rect x="12" y="72" width="8" height="8" rx="2" fill="#e7e7f5" opacity="0.4" />
+    <!-- badge -->
+    <circle cx="22" cy="54" r="3" fill="#fb923c" />
+    <!-- status bar -->
+    <rect x="0" y="68" width="208" height="24" fill="#0d0d1a" opacity="0.95" />
+    <text x="12" y="86" font-family="system-ui,Segoe UI,Roboto,Arial" font-weight="600" font-size="16" fill="#e7e7f5">Obsidian</text>
+    <!-- subtle overlay -->
+    <rect width="208" height="92" rx="8" fill="#000" opacity="0.12" />
+  </g>
+</svg>

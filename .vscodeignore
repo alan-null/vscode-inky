@@ -1,0 +1,14 @@
+.git/
+.gitignore
+src/
+scripts/
+temp/
+node_modules/
+
+**/tsconfig.json
+.vscode/
+
+**/*.js.map
+**/*.psd
+**/*.drawio.bkp
+**/*.drawio

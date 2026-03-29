@@ -1,0 +1,84 @@
+{
+  "name": "inky",
+  "displayName": "Inky",
+  "description": "Per-workspace color themes stored outside your repo or user profile, synced across devices using Settings Sync and global state.",
+  "version": "1.0.0",
+  "publisher": "alan-null",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "icon": "assets/logo.png",
+  "categories": [
+    "Themes",
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alan-null/vscode-inky"
+  },
+  "contributes": {
+    "configuration": {
+      "title": "Inky",
+      "properties": {
+        "inky.logging": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable the Inky output channel for diagnostics. When disabled, no channel is created and nothing is logged. Takes effect immediately."
+        },
+        "inky.syncPolling.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Poll globalState for Settings Sync changes from other machines. Disable if you only use one machine or prefer restart-based sync."
+        },
+        "inky.syncPolling.intervalSeconds": {
+          "type": "number",
+          "default": 60,
+          "minimum": 5,
+          "maximum": 3600,
+          "description": "How often (in seconds) to check for Settings Sync updates from other machines. Only applies when polling is enabled."
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "inky.setTheme",
+        "title": "Inky: Set theme for this workspace"
+      },
+      {
+        "command": "inky.editCustomThemes",
+        "title": "Inky: Edit custom themes file"
+      },
+      {
+        "command": "inky.clearTheme",
+        "title": "Inky: Clear theme for this workspace"
+      },
+      {
+        "command": "inky.listMappings",
+        "title": "Inky: List / manage all workspace themes"
+      },
+      {
+        "command": "inky.debug",
+        "title": "Inky: Debug — dump global state to console"
+      },
+      {
+        "command": "inky.resetAll",
+        "title": "Inky: Reset — clear ALL saved data"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^2.24.0",
+    "typescript": "^5.3.0"
+  }
+}
