@@ -207,6 +207,23 @@ export async function activate(ctx: vscode.ExtensionContext): Promise<void> {
     new vscode.Disposable(() => { if (mappingPollTimer !== undefined) { clearInterval(mappingPollTimer); } }),
   );
 
+  // window focus: re-apply this workspace's theme when the window gains focus ──
+  ctx.subscriptions.push(
+    vscode.window.onDidChangeWindowState(async (state) => {
+      if (!state.focused) { return; }
+      const key = workspaceKey();
+      if (!key) { return; }
+      const store = getStore(ctx);
+      const themeId = store[key];
+      if (!themeId) { return; }
+      const colors = resolveColors(themeId, customStore);
+      if (colors) {
+        log.debug(`Window focused — re-applying theme "${themeId}" for workspace "${key}"`);
+        await applyColors(colors);
+      }
+    }),
+  );
+
   // ── command: set theme ───────────────────────────────────────────────────
   ctx.subscriptions.push(
     vscode.commands.registerCommand('inky.setTheme', async () => {
