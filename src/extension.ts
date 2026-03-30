@@ -44,6 +44,19 @@ function resolveColors(
   return undefined;
 }
 
+/** Return an array of all color keys used by any Inky theme (built-in + custom). */
+function allInkyKeys(customStore: CustomThemeStore): string[] {
+  const keys = new Set<string>();
+  for (const t of THEMES) {
+    for (const k of Object.keys(t.colorCustomizations)) { keys.add(k); }
+  }
+  const custom = customStore.get();
+  for (const entry of Object.values(custom)) {
+    for (const k of Object.keys(entry.colorCustomizations)) { keys.add(k); }
+  }
+  return Array.from(keys);
+}
+
 function currentColors(): Record<string, string> {
   return {
     ...(vscode.workspace
@@ -149,7 +162,11 @@ export async function activate(ctx: vscode.ExtensionContext): Promise<void> {
         await saveStore(ctx, store);
       }
     } else {
-      log.debug(`No theme stored for workspace "${wsKey}"`);
+      log.debug(`No theme stored for workspace "${wsKey}" — clearing any Inky-applied colors`);
+      const keys = allInkyKeys(customStore);
+      if (keys.length > 0) {
+        await removeColors(keys);
+      }
     }
   }
 
@@ -188,7 +205,11 @@ export async function activate(ctx: vscode.ExtensionContext): Promise<void> {
       const store = getStore(ctx);
       const themeId = store[key];
       if (!themeId) {
-        log.debug(`Mapping poll: no theme stored for workspace "${key}"`);
+        log.debug(`Mapping poll: no theme stored for workspace "${key}" — clearing any Inky-applied colors`);
+        const keys = allInkyKeys(customStore);
+        if (keys.length > 0) {
+          await removeColors(keys);
+        }
         return;
       }
       log.debug(`Mapping poll: checking theme "${themeId}" for workspace "${key}"`);
@@ -215,7 +236,16 @@ export async function activate(ctx: vscode.ExtensionContext): Promise<void> {
       if (!key) { return; }
       const store = getStore(ctx);
       const themeId = store[key];
-      if (!themeId) { return; }
+      if (!themeId) {
+        // No mapping for this workspace — remove any Inky-applied keys so we don't inherit the last-used theme from another window on the same profile.
+        const keys = allInkyKeys(customStore);
+        if (keys.length > 0) {
+          log.debug(`Window focused — no mapping for workspace "${key}" — clearing Inky keys`);
+          await removeColors(keys);
+        }
+        return;
+      }
+
       const colors = resolveColors(themeId, customStore);
       if (colors) {
         log.debug(`Window focused — re-applying theme "${themeId}" for workspace "${key}"`);
