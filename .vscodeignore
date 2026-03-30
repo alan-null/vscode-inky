@@ -3,6 +3,7 @@
 src/
 scripts/
 temp/
+docs/
 node_modules/
 
 **/tsconfig.json

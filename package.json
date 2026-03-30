@@ -1,8 +1,8 @@
 {
   "name": "inky",
-  "displayName": "Inky",
-  "description": "Per-workspace color themes stored outside your repo or user profile, synced across devices using Settings Sync and global state.",
-  "version": "1.0.0",
+  "displayName": "Inky - experimental",
+  "description": "Per-workspace color themes stored outside your repo or global user settings, synced across devices using Settings Sync and global state.",
+  "version": "1.1.0",
   "publisher": "alan-null",
   "engines": {
     "vscode": "^1.85.0"

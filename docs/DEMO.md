@@ -13,8 +13,8 @@ Record MP4 video of a VSCode window using tools like OBS, Captura...
 
 ```powershell
 # Step 1: generate optimal palette
-ffmpeg -i demo.mp4 -vf "fps=15,scale=1024:-1:flags=lanczos,palettegen=stats_mode=diff" C:\temp\palette.png
+ffmpeg -i demo.mp4 -vf "fps=15,scale=1024:-1:flags=lanczos,palettegen=stats_mode=diff" palette.png
 
 # Step 2: apply palette during conversion
-ffmpeg -i demo.mp4 -i C:\temp\palette.png -filter_complex "fps=15,scale=1024:-1:flags=lanczos[x];[x][1:v]paletteuse=dither=bayer:bayer_scale=5" -loop 0 C:\temp\demo.gif
+ffmpeg -i demo.mp4 -i palette.png -filter_complex "fps=15,scale=1024:-1:flags=lanczos[x];[x][1:v]paletteuse=dither=bayer:bayer_scale=5" -loop 0 demo.gif
 ```

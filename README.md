@@ -78,3 +78,5 @@ Both **workspace→theme** mappings and custom theme definitions are stored in `
   That `settings.json` is shared across all VS Code windows using the same profile, so different windows cannot simultaneously display different **Inky**-applied themes under a single profile. **Workarounds:**
   - use separate VS Code profiles, or
   - rely on **Inky's** focus-based re-apply behavior (it re-applies the workspace theme when a window gains focus). Using workspace settings would allow per-workspace themes but stores them in `.vscode/settings.json`, which Inky intentionally avoids.
+
+    ![window focus](https://raw.githubusercontent.com/git-hosted/cdn/refs/heads/master/inky/window-focus.gif)
