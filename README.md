@@ -1,6 +1,6 @@
-# Inky
+# Inky - experimental
 
-Per-workspace color themes stored outside your repo or user profile, synced across devices using [**Settings Sync**](https://code.visualstudio.com/docs/configure/settings-sync) and [`globalState`](https://code.visualstudio.com/docs/configure/settings-sync#_sync-user-global-state-between-machines).
+Per-workspace color themes stored outside your repo or global user settings, synced across devices using [**Settings Sync**](https://code.visualstudio.com/docs/configure/settings-sync) and [`globalState`](https://code.visualstudio.com/docs/configure/settings-sync#_sync-user-global-state-between-machines).
 
 ![demo](https://raw.githubusercontent.com/git-hosted/cdn/refs/heads/master/inky/demo.gif)
 
@@ -10,7 +10,10 @@ Because `.vscode/settings.json` gets committed and shared with everyone else wor
 
 All the other extensions that try to solve this problem do the same thing — they write theme colors into the workspace/user settings.
 
-**Inky** keeps your **workspace→theme** mappings and **custom theme** definitions in `globalState` (synced via Settings Sync) — nothing touches your repository or user profile.
+**Inky** keeps **mappings** and **theme definitions** in `globalState`, synced across devices via Settings Sync.
+
+No theme data is ever committed to your repository. Colors are applied to your profile's settings on open and removed cleanly when cleared.
+
 
 ## Commands
 
@@ -60,7 +63,7 @@ Custom themes live in a JSON file at `globalStorageUri/themes.json` — profile-
 ## Architecture
 <!-- VSC Marketplace -->
 <!-- ![diagram](https://raw.githubusercontent.com/alan-null/vscode-inky/refs/heads/master/assets/diagram.png) -->
-<img src="assets/diagram.svg" alt="diagram" style="width:100%;height:auto;display:block" />
+<img src="assets/diagram.svg" alt="diagram" style="width:100%;height:auto;display:block" /></br>
 
 Both **workspace→theme** mappings and custom theme definitions are stored in `globalState` and registered with `setKeysForSync`, so Settings Sync carries them to all your machines automatically.
 
@@ -70,3 +73,8 @@ Both **workspace→theme** mappings and custom theme definitions are stored in `
 
 - **Multi-root workspaces:** keyed on the **first** folder only.
 - **Folder name collisions:** if two unrelated projects share the same folder name (e.g. two different `api` folders), they share the same theme mapping.
+- **Profile-scoped color settings:** `workbench.colorCustomizations` is written to the profile-scoped `settings.json` (`ConfigurationTarget.Global`).
+
+  That `settings.json` is shared across all VS Code windows using the same profile, so different windows cannot simultaneously display different **Inky**-applied themes under a single profile. **Workarounds:**
+  - use separate VS Code profiles, or
+  - rely on **Inky's** focus-based re-apply behavior (it re-applies the workspace theme when a window gains focus). Using workspace settings would allow per-workspace themes but stores them in `.vscode/settings.json`, which Inky intentionally avoids.
